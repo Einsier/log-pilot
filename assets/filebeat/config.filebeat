@@ -42,6 +42,11 @@ filebeat.config:
         path: \${path.config}/prospectors.d/*.yml
         reload.enabled: true
         reload.period: 10s
+
+# HTTP endpoint
+http.enabled: true
+http.host: 0.0.0.0
+http.port: 5066
 EOF
 }
 
